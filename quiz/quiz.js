@@ -117,26 +117,35 @@ let pontos = 0;
 
 const pergunta = document.getElementById("question");
 const respostas = document.getElementById("answer-buttons");
-const contador = document.getElementById("contador");   // ← Adicionado
+const contador = document.getElementById("contador");  
+
+const opcao0 = document.getElementById("opcao0");
+const opcao1 = document.getElementById("opcao1");
+const opcao2 = document.getElementById("opcao2");
+const opcao3 = document.getElementById("opcao3");
 
 function mostrarPergunta() {
 
-    // Atualiza o contador
-    contador.innerHTML = "Pergunta " + (numeroPergunta + 1) + " de " + perguntas.length;
+    contador.innerHTML =
+        "Pergunta " +
+        (numeroPergunta + 1) +
+        " de " +
+        perguntas.length;
 
-    pergunta.innerHTML = perguntas[numeroPergunta].pergunta;
+    pergunta.innerHTML =
+        perguntas[numeroPergunta].pergunta;
 
-    let html = "";
+    opcao0.innerHTML =
+        perguntas[numeroPergunta].opcoes[0];
 
-    for (let i = 0; i < perguntas[numeroPergunta].opcoes.length; i++) {
+    opcao1.innerHTML =
+        perguntas[numeroPergunta].opcoes[1];
 
-        html +=
-            "<button class='btn' onclick='responder(" + i + ")'>" +
-            perguntas[numeroPergunta].opcoes[i] +
-            "</button>";
-    }
+    opcao2.innerHTML =
+        perguntas[numeroPergunta].opcoes[2];
 
-    respostas.innerHTML = html;
+    opcao3.innerHTML =
+        perguntas[numeroPergunta].opcoes[3];
 }
 
 function responder(opcaoEscolhida) {

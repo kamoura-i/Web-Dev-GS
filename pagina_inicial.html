@@ -8,7 +8,7 @@
 
     <title>SpaceFarm</title>
 
-    <link rel="stylesheet" href="/estilo/style.css">
+    <link rel="stylesheet" href="estilo/style.css">
 
     <!-- GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,7 +22,7 @@
 
 </head>
 
-<body>
+<body class="verde">
 
     <!-- NAVBAR -->
     <nav class="navbar">
@@ -32,6 +32,7 @@
         <ul class="menu">
 
             <li><a href="#problema">Problema</a></li>
+            <li><a href="#solucao">Solução</a></li>
             <li><a href="#tecnologia">Tecnologia</a></li>
             <li><a href="#objetivos">Objetivos</a></li>
             <li><a href="#publico">Público</a></li>
@@ -93,7 +94,7 @@
 
         <img
             id="slide"
-            src="imgs/plantação_agrícola.jpeg"
+            src="imgs/foto_campo_slideshow.avif"
             alt="Imagem do slideshow">
 
     </section>
@@ -128,52 +129,88 @@
 
         </section>
 
+        <section id="solucao" class="secao container">
+
+        <!--SOLUÇÃO-->
+        <h2>Solução</h2>
+
+        <div class="conteudo">
+            
+            <img
+                src="imgs/agricultor_analisando_plantacao.jpeg"
+                alt="Solução SpaceFarm">
+
+            <div class="texto">
+
+                <p>
+                    O SpaceFarm utiliza satélites, sensores IoT e análise de dados
+                    para monitorar lavouras em tempo real.
+                </p>
+
+                <p>
+                    Com isso, produtores recebem informações e alertas que ajudam
+                    na tomada de decisões e na redução de perdas agrícolas.
+                </p>
+
+            </div>
+        </div>
+
+        </section>
+
         <!-- TECNOLOGIA -->
         <section id="tecnologia" class="secao container">
 
-            <h2>Tecnologia</h2>
+    <h2>Tecnologia</h2>
 
-            <div class="cards">
+        <div class="texto">
+            <p>
+                O SpaceFarm combina tecnologias espaciais e sensores inteligentes
+                para monitorar plantações e fornecer informações em tempo real.
+            </p>
 
-                <div class="card">
+        </div>
 
-                    <i class="fa-solid fa-satellite icone"></i>
+        <div class="cards">
 
-                    <h3>Satélites</h3>
+            <div class="card">
 
-                    <p>
-                        Dados coletados por satélites do INPE, NASA e ESA.
-                    </p>
+                <i class="fa-solid fa-satellite icone"></i>
 
-                </div>
+                <h3>Satélites</h3>
 
-                <div class="card">
-
-                    <i class="fa-solid fa-microchip icone"></i>
-
-                    <h3>Sensores IoT</h3>
-
-                    <p>
-                        Monitoramento de solo, temperatura e umidade.
-                    </p>
-
-                </div>
-
-                <div class="card">
-
-                    <i class="fa-solid fa-chart-line icone"></i>
-
-                    <h3>Análise Inteligente</h3>
-
-                    <p>
-                        Processamento local via Arduino e geração de alertas.
-                    </p>
-
-                </div>
+                <p>
+                    Dados coletados por satélites do INPE, NASA e ESA.
+                </p>
 
             </div>
 
-        </section>
+            <div class="card">
+
+                <i class="fa-solid fa-microchip icone"></i>
+
+                <h3>Sensores IoT</h3>
+
+                <p>
+                    Monitoramento de solo, temperatura e umidade.
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <i class="fa-solid fa-chart-line icone"></i>
+
+                <h3>Análise Inteligente</h3>
+
+                <p>
+                    Processamento local via Arduino e geração de alertas.
+                </p>
+
+            </div>
+
+        </div>
+
+</section>
 
         <!-- OBJETIVOS -->
         <section id="objetivos" class="secao container">
@@ -189,7 +226,7 @@
                     <h3>Reduzir perdas</h3>
 
                     <p>
-                        Identificar riscos antes que afetem a produção.
+                        Identificar riscos climáticos e falhas na lavoura antes que gerem prejuízos.
                     </p>
 
                 </div>
@@ -201,7 +238,7 @@
                     <h3>Economizar recursos</h3>
 
                     <p>
-                        Melhorar o uso de água e energia.
+                        Otimizar o consumo de água e energia por meio do monitoramento inteligente.
                     </p>
 
                 </div>
@@ -213,7 +250,7 @@
                     <h3>Sustentabilidade</h3>
 
                     <p>
-                        Promover uma agricultura moderna e eficiente.
+                        Incentivar práticas agrícolas mais eficientes e ambientalmente responsáveis.
                     </p>
 
                 </div>
@@ -230,7 +267,7 @@
             <div class="conteudo">
 
                 <img
-                    src="imgs/agricultor_analisando_plantacao.jpeg"
+                    src="imgs/foto_produtor_agricola.jpg"
                     alt="Agricultor analisando plantação">
 
                 <div class="texto">
@@ -241,11 +278,15 @@
 
                     <ul>
 
-                        <li>Produtores rurais</li>
-                        <li>Cooperativas agrícolas</li>
-                        <li>Empresas do agronegócio</li>
-                        <li>Pesquisadores</li>
-                        <li>Instituições agrícolas</li>
+                    <li><i class="fa-solid fa-user"></i> Produtores rurais</li>
+
+                    <li><i class="fa-solid fa-people-group"></i> Cooperativas agrícolas</li>
+
+                    <li><i class="fa-solid fa-building"></i> Empresas do agronegócio</li>
+
+                    <li><i class="fa-solid fa-flask"></i> Pesquisadores</li>
+
+                    <li><i class="fa-solid fa-graduation-cap"></i> Instituições agrícolas</li> 
 
                     </ul>
 
@@ -265,21 +306,35 @@
                 <div class="card">
                     <i class="fa-solid fa-clock icone"></i>
                     <h3>Monitoramento em tempo real</h3>
+                    <p>
+                            Acompanhamento contínuo das condições da lavoura para decisões mais rápidas.
+                    </p>
+
                 </div>
 
                 <div class="card">
                     <i class="fa-solid fa-bell icone"></i>
                     <h3>Alertas automáticos</h3>
+                    <p>
+                        Notificações sobre mudanças climáticas e riscos que podem afetar a produção.
+                    </p>        
+
                 </div>
 
                 <div class="card">
                     <i class="fa-solid fa-leaf icone"></i>
                     <h3>Produção sustentável</h3>
+                    <p>
+                        Uso mais eficiente dos recursos naturais, reduzindo desperdícios e impactos ambientais.
+                    </p>
                 </div>
 
                 <div class="card">
                     <i class="fa-solid fa-chart-column icone"></i>
                     <h3>Melhor tomada de decisão</h3>
+                    <p>
+                        Dados precisos auxiliam o produtor no planejamento e na gestão da lavoura.
+                    </p>
                 </div>
 
             </div>
@@ -306,79 +361,70 @@
         </section>
 
         <!-- APLICAÇÃO -->
-        <section id="aplicacao" class="secao container">
+<section id="aplicacao" class="secao container">
 
-            <h2>Aplicação no Dia a Dia</h2>
+    <h2>Aplicação no Dia a Dia</h2>
 
-            <div class="cards">
+    <div class="texto">
+        <p>
+            A plataforma auxilia produtores rurais no monitoramento diário da lavoura,
+            fornecendo dados em tempo real e alertas preventivos para aumentar a produtividade.
+        </p>
+    </div>
 
-                <div class="card">
+    <div class="cards">
 
-                    <i class="fa-solid fa-temperature-half icone"></i>
+        <div class="card">
 
-                    <h3>Temperatura</h3>
+            <i class="fa-solid fa-temperature-half icone"></i>
 
-                    <p>
-                        Sensores monitoram mudanças climáticas na lavoura.
-                    </p>
+            <h3>Temperatura</h3>
 
-                </div>
+            <p>
+                Detecta aumentos de temperatura que podem prejudicar a produção.
+            </p>
 
-                <div class="card">
+        </div>
 
-                    <i class="fa-solid fa-cloud-rain icone"></i>
+        <div class="card">
 
-                    <h3>Umidade</h3>
+            <i class="fa-solid fa-cloud-rain icone"></i>
 
-                    <p>
-                        Controle mais eficiente da irrigação.
-                    </p>
+            <h3>Umidade</h3>
 
-                </div>
+            <p>
+                Mede a umidade do solo para otimizar a irrigação.
+            </p>
 
-                <div class="card">
+        </div>
 
-                    <i class="fa-solid fa-satellite-dish icone"></i>
+        <div class="card">
 
-                    <h3>Satélites</h3>
+            <i class="fa-solid fa-satellite-dish icone"></i>
 
-                    <p>
-                        Acompanhamento do desenvolvimento da vegetação.
-                    </p>
+            <h3>Satélites</h3>
 
-                </div>
+            <p>
+                Imagens de satélite identificam áreas com desenvolvimento irregular.
+            </p>
 
-                <div class="card">
+        </div>
 
-                    <i class="fa-solid fa-mobile-screen-button icone"></i>
+        <div class="card">
 
-                    <h3>Alertas</h3>
+            <i class="fa-solid fa-mobile-screen-button icone"></i>
 
-                    <p>
-                        Notificações enviadas ao produtor em tempo real.
-                    </p>
+            <h3>Alertas</h3>
 
-                </div>
+            <p>
+                O produtor recebe avisos diretamente no celular em caso de risco.
+            </p>
 
-            </div>
+        </div>
 
-        </section>
-        <section class="temas">
+    </div>
 
-            <button class="tema verde-btn"
-                onclick="trocarTema('verde')">
-            </button>
-
-            <button class="tema azul-btn"
-                onclick="trocarTema('azul')">
-            </button>
-
-            <button class="tema escuro-btn"
-                onclick="trocarTema('escuro')">
-            </button>
-
-    </section>
-
+</section>
 
     </main>
 

@@ -275,13 +275,14 @@ header {
 /* TEXTO */
 
 .texto {
-
     flex: 1;
-
     min-width: 320px;
+    max-width: 500px;
+}
 
-    max-width: 550px;
-
+.conteudo img {
+    flex: 1;
+    max-width: 500px;
 }
 
 .texto p {
@@ -627,4 +628,13 @@ footer p {
     width: 25px;
     height: 25px;
     border-radius: 50%;
+}
+
+#aplicacao .texto,
+#tecnologia .texto {
+    max-width: 800px;
+    margin: 20px auto 50px;
+    text-align: center;
+    font-size: 1.1rem;
+    line-height: 1.8;
 }
