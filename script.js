@@ -33,4 +33,6 @@ function trocarTema(tema) {
     document.body.classList.remove("escuro");
 
     document.body.classList.add(tema);
+
+    localStorage.setItem("tema", tema);
 }

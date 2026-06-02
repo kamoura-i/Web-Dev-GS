@@ -1,4 +1,9 @@
 // Perguntas do Quiz
+const temaSalvo = localStorage.getItem("tema");
+
+if (temaSalvo) {
+    document.body.className = temaSalvo;
+}
 
 const perguntas = [
     {

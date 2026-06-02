@@ -511,8 +511,8 @@ footer p {
 
     background: linear-gradient(
         135deg,
-        #1b4332,
-        #143d2d
+        var(--cor-secundaria),
+        var(--cor-card)
     );
 
     margin: 80px auto;
@@ -520,6 +520,8 @@ footer p {
     border-radius: 20px;
 
     max-width: 1200px;
+
+    border: 1px solid var(--cor-destaque);
 
 }
 
