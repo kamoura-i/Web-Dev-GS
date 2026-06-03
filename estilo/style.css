@@ -171,15 +171,20 @@ header {
 
     padding: 20px;
 
-    background:
+    /* background:
         linear-gradient(rgba(0, 0, 0, 0.6),
             rgba(0, 0, 0, 0.6)),
         url("imgs/spacefarm-bg.jpg");
 
     background-size: cover;
 
-    background-position: center;
+    background-position: center; */
 
+  background-image: url('/imgs/reign-abarintos--cKXtsJWU-I-unsplash.jpg'); 
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; 
+  border-radius: 19px;
 }
 
 /* HERO CONTEÚDO */
