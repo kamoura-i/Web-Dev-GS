@@ -130,3 +130,31 @@ body {
     border-radius: 15px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
 }
+
+
+.rodape-quiz {
+    display: flex;
+    justify-content: flex-start; 
+    padding: 20px 0;             
+    margin-top: 30px;
+    font-family: 'Poppins', sans-serif;       
+}
+.rodape-quiz a {
+    color: var(--cor-texto);              
+    text-decoration: none;       
+    font-size: 1rem;             
+    font-weight: 600;            
+    transition: color 0.3s ease; 
+}
+
+.btn-voltar {
+    color: #a50c0c;              
+    text-decoration: none;       
+    font-size: 1rem;             
+    font-weight: 500;            
+    transition: color 0.3s ease; 
+}
+
+.btn-voltar:hover {
+    color: #c084fc;
+}
